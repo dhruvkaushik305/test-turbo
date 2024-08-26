@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import { SignInButton } from "./SignInButton";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
-
+        <SignInButton />
         <div className={styles.ctas}>
           <a
             className={styles.primary}
